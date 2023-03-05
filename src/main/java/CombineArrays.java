@@ -9,6 +9,21 @@ public class CombineArrays {
      */
     public int[] combine(int[] arr1, int[] arr2){
 
-        return null;
+
+        int a = arr1.length;
+        int b = arr2.length;
+
+
+        int c = a + b;
+
+        int[ ] cArray = new int[c];
+
+        System.arraycopy(arr1, 0, cArray, 0, a);
+
+        System.arraycopy(arr2, 0, cArray, a, b); 
+
+
+
+        return cArray;
     }
 }
